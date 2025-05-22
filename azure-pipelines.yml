@@ -1,0 +1,29 @@
+trigger:
+- main
+
+pool:
+  vmImage: 'windows-latest'
+
+variables:
+  buildConfiguration: 'Release'
+
+steps:
+- task: UseDotNet@2
+  inputs:
+    packageType: 'sdk'
+    version: '7.x.x'
+
+- script: dotnet restore
+  displayName: 'Restaurar paquetes'
+
+- script: dotnet build --configuration $(buildConfiguration)
+  displayName: 'Compilar solucion'
+
+- script: dotnet publish --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)
+  displayName: 'Publicar'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
