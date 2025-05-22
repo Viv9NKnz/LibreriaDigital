@@ -7,6 +7,7 @@ namespace LibreriaDigital.Data {
 
     public DbSet<User> Users => Set<User>();
     public DbSet<Book> Books => Set<Book>();
-    public DbSet<Review> Reviews => Set<Review>();
+    public DbSet<Review> Reviews { get; set; }
+
   }
 }

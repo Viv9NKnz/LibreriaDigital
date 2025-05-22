@@ -136,3 +136,4 @@ C:\Users\Justi\Desktop\LibreriaDigital\LibreriaDigital\obj\Debug\net8.0\refint\L
 C:\Users\Justi\Desktop\LibreriaDigital\LibreriaDigital\obj\Debug\net8.0\LibreriaDigital.pdb
 C:\Users\Justi\Desktop\LibreriaDigital\LibreriaDigital\obj\Debug\net8.0\LibreriaDigital.genruntimeconfig.cache
 C:\Users\Justi\Desktop\LibreriaDigital\LibreriaDigital\obj\Debug\net8.0\ref\LibreriaDigital.dll
+C:\Users\Justi\Desktop\LibreriaDigital\LibreriaDigital\obj\Debug\net8.0\LibreriaDigital.sourcelink.json
