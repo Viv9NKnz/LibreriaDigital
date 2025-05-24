@@ -29,10 +29,10 @@ jobs:
       run: dotnet build --no-restore --configuration Release
 
     - name: 🚀 Publicar
-      run: dotnet publish -c Release -o ./output
+      run: dotnet publish -c Release -o ${{github.workspace}}/output
 
     - name: 🗃️ Subir artefacto compilado
       uses: actions/upload-artifact@v3
       with:
         name: LibreriaDigital-Api
-        path: ./output
+        path: output/
