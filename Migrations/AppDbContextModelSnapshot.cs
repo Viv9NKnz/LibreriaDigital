@@ -134,7 +134,7 @@ namespace LibreriaDigital.Migrations
                     b.HasOne("LibreriaDigital.Models.User", "User")
                         .WithMany()
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Book");

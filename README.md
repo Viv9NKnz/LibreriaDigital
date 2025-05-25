@@ -12,7 +12,7 @@ Una aplicación web API creada con ASP.NET Core que permite a los usuarios gesti
 - ASP.NET Core 7
 - Entity Framework Core
 - SQL Server en Docker
-- Azure DevOps (CI/CD)
+
 
 ## 📦 Scripts Clave
 ```bash
@@ -34,7 +34,7 @@ LibreriaDigital/
 ├── Migrations/
 ├── Program.cs
 ├── appsettings.json
-└── azure-pipelines.yml
+
 ```
 
 ## ✅ Endpoints
@@ -43,8 +43,7 @@ LibreriaDigital/
 - `POST /api/books`
 - `GET /api/books`
 
-## 🔗 Integración CI/CD
-Utiliza `azure-pipelines.yml` para compilación y despliegue automatizado.
+
 
 ---
-Creado por un aprendiz del código con magia de Docker y .NET 🧙‍♂️
+Creado por justin alvarez laverde aprendiz del código
